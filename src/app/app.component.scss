@@ -1,0 +1,46 @@
+.app-layout-container {
+  // Top nav bar
+  header {
+    nav {
+      .collapse {
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  // Left nav bar
+  .navbar-fixed-left {
+    border-radius: 0;
+    height: 100%;
+    background-color: #222;
+    align-items: normal;
+    .navbar-nav {
+      width: 100%;
+      li {
+        a {
+          width: 225px;
+          border-bottom: 1px rgba(0, 0, 0, 0.3) solid;
+          color: #9d9d9d;
+          position: relative;
+          display: block;
+          padding: 10px 15px;
+          text-decoration: none;
+          &:hover {
+            outline: none;
+            background-color: #1a242f;
+          }
+          &.active {
+            outline: none;
+            background-color: #1a242f;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-fixed-left + .container {
+    padding-left: 160px;
+  }
+}
